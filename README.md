@@ -1,4 +1,4 @@
 # Maze-Captha
 This is Canvas-renderable emoji-captcha maze.
 
-![Screenshot](https://github.com/kapuniko/Maze-Captha/raw/main/Screenshot.png)
+<img width="200px" src="Screenshot.png" alt="Screenshot"/>
