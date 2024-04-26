@@ -1,0 +1,103 @@
+body {
+  font-family: "Noto Color Emoji", sans-serif;
+  overflow-y: scroll;
+}
+.captcha {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  padding: 50px;
+  margin: 30px auto;
+  gap: 20px;
+  box-shadow: 0px 0px 80px 0px rgba(158, 158, 158, 0.4);
+  border-radius: 10px;
+  text-align: center;
+  color: #333333;
+}
+
+.labirint {
+  border: 20px solid #dbd8d8;
+  border-radius: 10px;
+  background-color: #dbd8d8;
+}
+
+.submitButton {
+  background: linear-gradient(65deg, #170 0%, #1ece01 100%);
+  border: 0;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  filter: drop-shadow(0 0 8px lime);
+  -webkit-tap-highlight-color: transparent;
+}
+.submitButton:hover {
+  background: linear-gradient(65deg, #027244 0%, #01ce61 100%);
+  filter: drop-shadow(0 0 8px #01ce61);
+}
+
+.submitButton:active {
+  background: linear-gradient(65deg, #f600aa 0%, #9600fc 100%);
+  filter: drop-shadow(0 0 4px #9600fc);
+}
+
+.submitButton:disabled {
+  background: linear-gradient(65deg, rgb(255, 0, 0) 0%, rgb(255, 0, 46) 100%);
+  filter: drop-shadow(0 0 8px crimson);
+  cursor: not-allowed;
+}
+
+.credits {
+  text-align: center;
+  margin: auto;
+  color: gray;
+  font-size: 14px;
+}
+
+.credits a {
+  color: gray;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+}
+
+.controls div {
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;  
+  -webkit-tap-highlight-color: transparent;
+}
+
+.controls div:active {
+  filter: drop-shadow(0 0 5px #9600fc);
+}
+
+@keyframes collapse{
+  0%{
+    display: flex;
+    opacity: 1;
+    height: 64px;    
+    margin-top: 0px;
+    gap: 27px;
+  }
+  100%{
+    display: none;
+    opacity: 0;
+    height: 0px;
+    margin-top: -20px;
+    gap: 0px;
+  }
+} 
+
+.collapsed{
+  display: none;
+  height: 0px;  
+  margin-top: -20px;
+  gap:0px;
+  animation:collapse .4s;
+}
